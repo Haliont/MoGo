@@ -1,0 +1,37 @@
+.services
+  +sect()
+
+  &__list
+    +wrapper()
+
+  &__row
+    display: flex
+    justify-content: space-between
+    padding: 50px 25px 0
+
+    @media (max-width: 950px)
+      flex-wrap: wrap
+      justify-content: space-around
+
+    &:first-child
+      padding-bottom: 50px
+      border-bottom: 1px solid #e5e5e5
+
+  &__item
+    max-width: 333px
+    width: 33.33%
+
+    &:not(:last-child)
+      margin-right: 10px
+
+    @media (max-width: 950px) and (min-width: 651px)
+
+      &:nth-child(n + 3)
+        margin-top: 40px
+
+    @media (max-width: 650px)
+      width: 100%
+      max-width: 100%
+
+      &:not(:last-child)
+        margin-bottom: 40px

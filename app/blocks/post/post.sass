@@ -1,0 +1,89 @@
+.post
+  max-width: 380px
+  margin-bottom: 45px
+  padding-bottom: 70px
+
+  position: relative
+
+  &__header
+    position: relative
+
+  &__img
+    display: block
+    max-width: 100%
+    height: auto
+
+  &__time
+    color: $white
+    padding: 15px
+    background-color: $thirdDecorColor
+
+    position: absolute
+    bottom: 10px
+    left: -10px
+
+    &_day,
+    &_month
+      display: block
+      text-align: center
+
+    &_day
+      font-family: $fontTitle
+      font-size: 2rem
+      font-weight: 700
+      text-transform: uppercase
+
+    &_month
+      font-family: $fontFamily
+      font-size: 1rem
+      font-weight: 300
+      font-style: italic
+
+  &__title
+    padding-top: 20px
+    padding-bottom: 20px
+    color: $titleColor
+    font-family: $fontTitle
+    font-size: 0.933rem
+    font-weight: 400
+    text-transform: uppercase
+
+    &:hover
+      cursor: pointer
+      text-decoration: underline
+
+  &__link
+    color: currentColor
+
+  &__text
+    color: $textColor
+    font-family: $fontFamily
+    font-size: 1rem
+    font-weight: 400
+    line-height: 1.6rem
+    margin-bottom: 20px
+
+  &__footer
+    display: flex
+    padding: 20px 0
+    border-top: 1px solid #e5e5e5
+
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+
+  &__stat
+    cursor: pointer
+    margin-right: 20px
+
+    &-icon,
+    &-counter
+      display: inline-block
+      vertical-align: middle
+
+    &-icon
+      margin-right: 6px
+      max-width: 20px
+      max-height: 14px
+      fill: $thirdDecorColor

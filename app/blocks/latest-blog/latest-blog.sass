@@ -1,0 +1,24 @@
+.latest-blog
+  +sect()
+  padding-bottom: 50px
+
+  &__list
+    +wrapper()
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: $tablet)
+      flex-direction: column
+      align-items: center
+
+  &__post
+    width: 33.3333%
+
+    &:not(:last-child)
+      margin-right: 30px
+
+      @media (max-width: $tablet)
+        margin-right: 0
+
+    @media (max-width: $tablet)
+      width: 100%

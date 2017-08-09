@@ -1,0 +1,92 @@
+.footer
+  padding-top: 74px
+  background: #f8f8f8
+
+  // .instagram__img:nth-child(3n)
+  //   margin-right: 0
+
+  &__inner
+    +wrapper()
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-bottom: 70px
+
+    @media (max-width: 1180px)
+      justify-content: space-around
+
+    @media (max-width: 680px)
+      flex-direction: column
+
+  &__info
+    max-width: 480px
+    margin-right: 20px
+
+  &__logo
+    font-family: $fontTitle
+    font-size: 3.067rem
+    font-weight: 700
+
+  &__text
+    margin: 42px 0 49px
+
+  &__follows
+    color: $titleColor
+    font-family: $fontTitle
+    font-size: 0.933rem
+    font-weight: 400
+    margin-bottom: 18px
+
+    span
+      font-size: 1.2rem
+      font-weight: 700
+
+  &__follow-us
+    display: flex
+    padding: 16px 0
+    border-top: 1px solid #e5e5e5
+
+    span
+      color: $textColor
+      font-family: $fontFamily
+      font-size: 1rem
+      font-weight: 300
+      font-style: italic
+      line-height: 1.6rem
+
+  &__social
+    margin-left: 22px
+
+  &__subscribe
+    margin-top: 12px
+    max-width: 412px
+
+  // &__instagram,
+  // &__blogs
+    // margin-top: 6px
+
+  &__blogs
+    margin-right: 20px
+
+    @media (max-width: 910px)
+      margin-top: 60px
+
+  &__instagram
+    max-width: 275px
+    min-width: 275px
+
+    @media (max-width: 1180px)
+      margin-top: 60px
+
+  &__copyright
+    text-align: center
+    +wrapper()
+    display: block
+    padding: 24px
+    border-top: 1px solid #e5e5e5
+
+    a
+      color: $firstDecorColor
+
+      &:hover
+        text-decoration: underline

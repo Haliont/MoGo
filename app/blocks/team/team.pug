@@ -1,0 +1,40 @@
+mixin team()
+  section.team&attributes(attributes)
+    +sect-head('Who we are', 'Meet our team', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ')
+    .team__body
+      +pic-card(
+      'img/team/team_1.jpg', 'Matthew Dix', 'Graphic Design'
+      )(class="team__pic-card")
+        .pic-card__social
+          .pic-card__s-link
+            +svg('facebook')
+          .pic-card__s-link
+            +svg('twitter')
+          .pic-card__s-link
+            +svg('pinterest')
+          .pic-card__s-link
+            +svg('instagram')
+      +pic-card(
+      'img/team/team_2.jpg', 'Christopher Campbell', 'Branding/UX design'
+      )(class="team__pic-card")
+        .pic-card__social
+          .pic-card__s-link
+            +svg('facebook')
+          .pic-card__s-link
+            +svg('twitter')
+          .pic-card__s-link
+            +svg('pinterest')
+          .pic-card__s-link
+            +svg('instagram')
+      +pic-card(
+      'img/team/team_3.jpg', 'Michael Fertig', 'Developer'
+      )(class="team__pic-card")
+        .pic-card__social
+          .pic-card__s-link
+            +svg('facebook')
+          .pic-card__s-link
+            +svg('twitter')
+          .pic-card__s-link
+            +svg('pinterest')
+          .pic-card__s-link
+            +svg('instagram')

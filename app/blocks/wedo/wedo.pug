@@ -1,0 +1,6 @@
+mixin wedo()
+  section.wedo&attributes(attributes)
+    +sect-head('Service', 'what we do', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ')
+    .wedo__body
+      img(src="img/what_we_do_pic.jpg" alt="Картиночка").wedo__img
+      +accordion()(class="wedo__accordion")

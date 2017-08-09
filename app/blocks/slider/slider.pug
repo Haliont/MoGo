@@ -1,0 +1,32 @@
+mixin slider()
+  div.slider&attributes(attributes)
+    .slider__inner
+      ul.slider__list
+        li.slider__item.s-effect-fade.s-opion
+          if block
+            block
+          else
+            img(src="img/slider_userpic.png", alt="fads").s-opion__img
+          .s-opion__body
+            blockquote.s-opion__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat ea dolores, magnam cupiditate beatae aliquam omnis praesentium, quidem similique.
+            cite.s-opion__author Jon Doe
+        li.slider__item.s-effect-fade.s-opion
+          img(src="img/opion_2.png", alt="fads").s-opion__img
+          .s-opion__body
+            blockquote.s-opion__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat ea dolores, magnam cupiditate beatae aliquam omnis praesentium, quidem similique.
+            cite.s-opion__author Author
+        li.slider__item.s-effect-fade.s-opion
+          img(src="img/opion_3.png", alt="fads").s-opion__img
+          .s-opion__body
+            blockquote.s-opion__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat ea dolores, magnam cupiditate beatae aliquam omnis praesentium, quidem similique.
+            cite.s-opion__author Author
+        li.slider__item.s-effect-fade.s-opion
+          img(src="img/opion_4.png", alt="fads").s-opion__img
+          .s-opion__body
+            blockquote.s-opion__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur fugiat ea dolores, magnam cupiditate beatae aliquam omnis praesentium, quidem similique.
+            cite.s-opion__author Author
+
+      button.slider__btn.slider__btn_prev
+        +svg('arrow-left')
+      button.slider__btn.slider__btn_next
+        +svg('arrow-right')

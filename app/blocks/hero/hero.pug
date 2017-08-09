@@ -1,0 +1,34 @@
+mixin hero()
+  div.hero&attributes(attributes)
+    .hero__overlay
+    .hero__inner
+      +header()
+      .hero__text-wrap
+        h2.hero__under-title Creative Template
+        h1.hero__title Welcome <br> to MoGo
+      +button('Learn more')(class="hero__button")
+      .hero__promotion-section
+        .hero__ps-item._active
+          .hero__psi-line
+            div
+          .hero__psi-text
+            h3.hero__psi-num 01
+            span.hero__psi-title Intro
+        .hero__ps-item
+          .hero__psi-line
+            div
+          .hero__psi-text
+            h3.hero__psi-num 02
+            span.hero__psi-title Work
+        .hero__ps-item
+          .hero__psi-line
+            div
+          .hero__psi-text
+            h3.hero__psi-num 03
+            span.hero__psi-title About
+        .hero__ps-item
+          .hero__psi-line
+            div
+          .hero__psi-text
+            h3.hero__psi-num 04
+            span.hero__psi-title Contacts

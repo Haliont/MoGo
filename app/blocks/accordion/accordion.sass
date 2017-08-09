@@ -1,0 +1,57 @@
+.accordion
+
+  &__item
+
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.item-accord
+
+  &__header
+    display: flex
+    align-items: center
+    border: solid 1px #e5e5e5
+    padding: 15px
+      right: 65px
+    min-height: 60px
+    color: $titleColor
+    text-transform: uppercase
+    font-family: $fontTitle
+    font-size: 14px
+
+    position: relative
+
+  &__icon
+    +unflexible
+    fill: $thirdDecorColor
+    width: 30px
+    height: 30px
+    margin-right: 15px
+
+  &__arrow
+    cursor: pointer
+    box-sizing: content-box
+    padding: 5px
+    +absolute-center()
+    right: 19px
+    fill: #ccc
+
+  &__body
+    height: 0
+    max-height: 181px
+    padding: 0
+    border: 0
+    overflow-y: auto
+
+  &_active
+
+    .item-accord
+
+      &__body
+        height: 100%
+        padding: 20px
+        border: solid 1px #e5e5e5
+          top: 0
+
+      &__arrow
+        transform: translateY(-50%) rotate(180deg)

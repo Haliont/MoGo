@@ -1,0 +1,5 @@
+mixin social(...links)
+  div.social&attributes(attributes)
+    each link in links
+      a(href="#" + link).social__link
+        +svg(link, 'social__icon')

@@ -1,0 +1,44 @@
+include ../blocks/logos/logos
+include ../blocks/slider/slider
+include ../blocks/map/map
+include ../blocks/b-post/b-post
+include ../blocks/instagram/instagram
+include ../blocks/subscribe/subscribe
+include ../blocks/social/social
+include ../blocks/blogs/blogs
+include ../blocks/post/post
+include ../blocks/latest-blog/latest-blog
+include ../blocks/reviews/reviews
+include ../blocks/opion/opion
+include ../blocks/work/work
+include ../blocks/team/team
+include ../blocks/accordion/accordion
+include ../blocks/wedo/wedo
+include ../blocks/design/design
+include ../blocks/item-services/item-services
+include ../blocks/services/services
+include ../blocks/sect-head/sect-head
+include ../blocks/facts/facts
+include ../blocks/about-us/about-us
+include ../blocks/pic-card/pic-card
+include ../blocks/button/button
+include ../blocks/hero/hero
+include ../blocks/navigation/navigation
+include ../blocks/logo/logo
+include ../blocks/footer/footer
+include ../blocks/header/header
+include ../mixins
+
+block pageInfo
+
+doctype html
+html(lang='ru')
+  include ../blocks/head/head
+  body(class="page page-" + page.name)
+    include ../svg/sprite.svg
+    block content
+    +footer()
+    block vendors
+      //- script(src="libs/jquery-3.2.1.min.js")
+    block scripts
+      script(src="scripts/main.min.js")

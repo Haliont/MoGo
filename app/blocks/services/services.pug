@@ -1,0 +1,37 @@
+mixin services()
+  section.services&attributes(attributes)
+    +sect-head('We work with', 'Amazing Services')
+
+    .services__list
+      .services__row
+        +item-services(
+        'alarm',
+        'Photography',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+        )(class="services__item")
+        +item-services(
+        'line_graph',
+        'Web Design',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+        )(class="services__item")
+        +item-services(
+        'computer_ok',
+        'Creativity',
+        'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+        )(class="services__item")
+      .services__row
+        +item-services(
+        'book',
+        'seo',
+        'Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.'
+        )(class="services__item")
+        +item-services(
+        'home',
+        'Css/Html',
+        'Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.'
+        )(class="services__item")
+        +item-services(
+        'image',
+        'digital',
+        'Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.'
+        )(class="services__item")

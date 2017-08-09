@@ -1,0 +1,6 @@
+mixin item-services(icon, title, text)
+  div.item-services&attributes(attributes)
+    +svg(icon, 'item-services__icon')
+    .item-services__body
+      h3.item-services__title= title
+      p.item-services__text= text

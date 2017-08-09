@@ -1,0 +1,122 @@
+.navigation
+  display: flex
+  // align-items: baseline
+  justify-content: space-between
+
+  .n-burger
+    display: none
+    width: 24px
+    height: 15px
+    padding: 0
+    border: 0
+    background: transparent
+    margin-top: 5px
+
+    position: relative
+
+    transition: all .25s
+
+    @media (max-width: $tablet)
+      display: block
+
+    &__line
+      height: 2px
+      width: 100%
+      background-color: $white
+
+      position: absolute
+      left: 50%
+
+      transition: all .25s
+
+      &_top
+        top: 0
+        transform: translate(-50%, 0%)
+
+      &_middle
+        top: 50%
+        transform: translate(-50%, -15%)
+
+      &_bottom
+        top: 100%
+        transform: translate(-50%, -50%)
+
+    &:hover
+
+      .n-burger
+
+        &__line
+          background-color: $secondDecorColor
+
+    &_active
+
+      .n-burger
+
+        &__line
+
+          &_top
+            top: 50%
+            transform: translate(-50%, -50%) rotate(135deg)
+
+          &_middle
+            opacity: 0
+
+          &_bottom
+            top: 50%
+            transform: translate(-50%, -50%) rotate(-135deg)
+
+  &__list
+
+    @media (max-width: $tablet)
+      display: none
+
+  &__item
+    display: inline-block
+    margin-right: 55px
+    &:last-child
+      margin: 0
+
+    @media (max-width: 860px)
+      &:not(:last-child)
+        margin-right: 30px
+
+  &__link
+    display: block
+    color: $white
+    font-size: 0.933rem
+    padding: 0px 5px 12px
+    text-transform: uppercase
+    border-bottom: 3px solid transparent
+
+    &:hover
+      color: $secondDecorColor
+      border-bottom-color: currentColor
+
+  &__buttons
+    color: $white
+    margin-top: 2px
+    margin-left: 60px
+
+    @media (max-width: $tablet)
+      margin-left: 30px
+
+    button
+      background: none
+      border: none
+      margin-right: 45px
+
+      &:last-child
+        margin-right: 0
+
+      &:hover
+
+        svg
+          color: $secondDecorColor
+
+      @media (max-width: $tablet)
+        margin-right: 30px
+
+    svg
+      max-width: 18px
+      max-height: 18px
+      transition: all .2s

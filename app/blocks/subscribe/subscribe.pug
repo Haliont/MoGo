@@ -1,0 +1,4 @@
+mixin subscribe()
+  form.subscribe&attributes(attributes)
+    input(type="text" name="subscribe" placeholder="Your Email...").subscribe__input
+    +button('Subscribe')(class="subscribe__btn button_color-green")

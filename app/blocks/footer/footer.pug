@@ -1,0 +1,33 @@
+mixin footer()
+  footer.footer&attributes(attributes)
+    .footer__inner
+
+      .footer__info
+        +logo()(class="footer__logo logo_color-gray")
+        .footer__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+        .footer__follow-box
+
+          .footer__follows 
+            span 15k 
+            | followers
+
+          .footer__follow-us
+            span Follow us:
+            +social(
+            'facebook',
+            'twitter',
+            'instagram',
+            'pinterest',
+            'g-plus',
+            'youtube',
+            'dribbble',
+            'tumblr'
+            )(class="footer__social")
+          +subscribe()(class="footer__subscribe")
+
+      +blogs().footer__blogs
+      +instagram().footer__instagram
+
+    span.footer__copyright © 2016 MoGo free PSD template by 
+      a(href="#") Laaqiq

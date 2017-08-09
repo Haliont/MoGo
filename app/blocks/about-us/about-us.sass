@@ -1,0 +1,26 @@
+.about-us
+  +sect()
+
+  &__body
+    +wrapper()
+    display: flex
+    // flex-wrap: wrap
+    justify-content: space-between
+
+    @media (max-width: 950px)
+      flex-wrap: wrap
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+
+  &__pic-card
+    width: 33.3333%
+    margin-right: 30px
+
+    &:last-child
+      margin-right: 0
+
+    @media (max-width: 950px)
+      width: 100%
+      margin: 0
+        bottom: 30px

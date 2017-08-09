@@ -1,0 +1,28 @@
+extends ../layouts/main
+
+block pageInfo
+  -
+    page = {
+      name: 'home',
+      title: 'Главная страница',
+      appTitle: 'Главная страница',
+      description: 'Lorem ipsum dolor sit amet'
+    }
+
+block content
+  +hero()
+  +about-us()
+  +facts()
+  +services()
+  +design()
+  +wedo()
+  +slider()
+    .s-opion__custom-pic
+      +svg('speech-4')
+  +team()
+  +logos()
+  +work()
+  +slider()(class="slider_mod")
+  +reviews()
+  +latest-blog()
+  +map()

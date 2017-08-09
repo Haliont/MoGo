@@ -1,0 +1,8 @@
+mixin about-us()
+  section.about-us&attributes(attributes)
+    +sect-head('What we do', 'Story about us', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+    .about-us__body
+      //- path, title, desc, element
+      +pic-card('img/about_us/about_us_1.jpg')(class="about-us__pic-card")
+      +pic-card('img/about_us/about_us_2.jpg')(class="about-us__pic-card")
+      +pic-card('img/about_us/about_us_3.jpg')(class="about-us__pic-card")

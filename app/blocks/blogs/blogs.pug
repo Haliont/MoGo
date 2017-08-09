@@ -1,0 +1,18 @@
+mixin blogs()
+  div.blogs&attributes(attributes)
+    h3.blogs__title Blogs
+    ul.blogs__list
+      +b-post(
+      'footer_blog/ft_blog_1.jpg', 
+      'Lorem ipsum dolor sit amet, consectetur adipiscing'
+      )(class="blogs__post")
+
+      +b-post(
+      'footer_blog/ft_blog_2.jpg', 
+      'Consectetur adipiscing elit, sed do eiusmod tempor'
+      )(class="blogs__post")
+
+      +b-post(
+      'footer_blog/ft_blog_3.jpg', 
+      'sed do eiusmod tempor incididunt ut labore'
+      )(class="blogs__post")

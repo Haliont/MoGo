@@ -1,0 +1,128 @@
+.slider
+  background-color: #f8f8f8
+  padding: 70px 0
+
+  &__inner
+    +wrapper()
+
+    position: relative
+
+  &__list
+    padding: 0 55px
+    list-style-type: none
+
+  &__item
+
+    &:not(:first-child)
+      display: none
+
+  &__btn
+    display: block
+    padding: 10px
+    background: none
+    border: 0
+    cursor: pointer
+
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    svg
+      fill:  #ccc
+      width: 12px
+      height: 22px
+
+    &_prev
+      left: 13px
+
+    &_next
+      right: 13px
+
+  &_mod
+    padding: 100px 0
+    background: #FCFCFC
+
+    .s-opion__body
+      padding-top: 31px
+
+.s-opion
+  display: flex
+  align-items: flex-start
+
+  @media (max-width: $tablet)
+    justify-content: center
+    flex-wrap: wrap
+
+  &__custom-pic,
+  &__img
+    margin-right: 61px
+
+    @media (max-width: $tablet)
+      margin-right: 0
+      margin-bottom: 15px
+
+  &__img
+    max-width: 165px
+    min-width: 122px
+    width: 30%
+    height: auto
+
+  &__custom-pic
+    +unflexible()
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 150px
+    height: 150px
+    border: 3px solid $thirdDecorColor
+
+    svg
+      width: 63px
+      height: 61px
+      fill:  $thirdDecorColor
+
+  &__body
+
+    @media (max-width: $tablet)
+      width: 100%
+      text-align: center
+
+    @media (max-width: $mobile)
+      text-align: left
+
+  &__text
+    font-family: $fontFamily
+    font-size: rem(24px)
+    font-weight: 300
+    font-style: italic
+    line-height: rem(36px)
+    color: #999
+
+    position: relative
+
+    &::before,
+    &::after
+      content: '“'
+
+  &__author
+    font-family: "Kaushan Script"
+    font-size: rem(24px)
+    font-weight: 400
+    color: #333
+
+    display: inline-block
+    padding-left: 70px
+    margin-top: 20px
+
+    position: relative
+
+    &::before
+      content: ''
+      display: block
+      width: 60px
+      height: 3px
+      background-color: $firstDecorColor
+
+      position: absolute
+      top: 50%
+      left: 0

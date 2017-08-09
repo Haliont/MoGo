@@ -1,0 +1,17 @@
+mixin pic-card(path, title, desc)
+  - element = element || ''
+  - title   = title   || ''
+  - desc    =    desc || ''
+  div.pic-card&attributes(attributes)
+    .pic-card__img-box
+      img(src= path, alt="Картиночка")
+      .pic-card__hovered-box
+        if block
+          block
+        else
+          +svg('users', 'pic-card__hovered-icon')
+          span.pic-card__hovered-text super team
+
+    .pic-card__text-box
+      h4.pic-card__title.people-name= title || ''
+      h5.pic-card__desc.people-job= desc

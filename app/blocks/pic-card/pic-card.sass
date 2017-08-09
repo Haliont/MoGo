@@ -1,0 +1,119 @@
+.pic-card
+  // display: flex
+  // flex-direction: column
+  max-width: 380px
+
+  img
+    display: block
+    width: 100%
+    height: auto
+
+    transform: translate(0, 0)
+    transition: transform .25s .25s ease, opacity .2s
+
+    position: relative
+    z-index: 1
+
+  &__img-box
+    background: $thirdDecorColor
+    position: relative
+
+    &::before
+      content: ''
+      display: block
+      width: 100%
+      height: 100%
+      opacity: 0
+      background-image: $mainGradient
+
+      transform: translate(0, 0)
+      transition: transform .25s .25s ease, opacity .2s
+
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+
+    &:hover
+      cursor: pointer
+
+      img
+        transform: translate(-10px, -10px)
+
+      &::before
+        opacity: 1
+        transform: translate(-10px, -10px)
+
+      .pic-card__hovered-box
+        opacity: 1
+        transform: translate(-60%, -50%)
+
+  &__hovered-box
+    opacity: 0
+
+    transition: transform .25s .25s ease, opacity .2s
+
+    position: absolute
+    z-index: 3
+    top: 50%
+    left: 50%
+    transform: translate(-50%, 50%)
+
+    @media (max-width: $tablet)
+      opacity: 1
+      transform: translate(-50%, -50%)
+
+  &__hovered-icon
+    display: block
+    margin: auto
+    width: 2.133rem
+    height: 1.533rem
+    fill: $white
+
+  &__hovered-text
+    display: block
+    color: $white
+    font-family: $fontTitle
+    font-size: 1.2rem
+    font-weight: 700
+    text-transform: uppercase
+    white-space: nowrap
+
+  &__title
+    text-align: center
+    margin-top: 31px
+    padding: 0 10px
+
+    &:empty
+      display: none
+
+  &__desc
+    text-align: center
+    padding-top: 15px
+
+    &:empty
+      display: none
+
+  &__social
+    display: flex
+
+  &__s-link
+    width: 56px
+    height: 56px
+    padding: 14px
+    background-color: $secondDecorColor
+
+    transition: all .25s
+
+    svg
+      width: 100%
+      height: 100%
+      max-width: 26px
+      max-height: 26px
+      fill: $firstDecorColor
+
+    &:hover
+      background-color: $firstDecorColor
+
+      svg
+        fill: $white

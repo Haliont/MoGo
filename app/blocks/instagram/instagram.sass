@@ -1,0 +1,42 @@
+.instagram
+
+  &__title
+    color: $titleColor
+    font-family: $fontTitle
+    font-size: 0.933rem
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 40px
+
+  &__pics
+    // display: flex
+    // flex-wrap: wrap
+    font-size: 0
+    margin-bottom: 20px
+
+  &__img
+    display: inline-block
+    vertical-align: top
+    margin:
+      left: 2px
+      bottom: 2px
+
+    &:nth-child(3n + 1)
+      margin-left: 0
+
+    @media (max-width: 862px)
+
+      &:nth-child(3n + 1)
+        margin-left: 2px
+
+  &__link
+    color: $titleColor
+    font-family: $fontFamily
+    font-size: 0.867rem
+    font-weight: 300
+    font-style: italic
+    line-height: 1.6rem
+
+    &:hover
+      border-top: 1px solid currentColor
+      border-bottom: 1px solid currentColor

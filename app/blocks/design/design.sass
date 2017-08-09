@@ -1,0 +1,59 @@
+.design
+  +sect()
+  min-height: 840px
+  +img-bg('design_bg.jpg')
+  background-position: center
+  background-size: cover
+
+  position: relative
+
+  @media (max-width: $tablet)
+    min-height: 740px
+
+  @media (max-width: $mobile)
+    min-height: 640px
+
+  @media (max-width: 370px)
+    min-height: 540px
+
+  &__tablet
+    width: 477px
+    position: absolute
+    bottom: 0
+    left: calc(50% - 25px)
+    transform: translateX(-50%)
+
+    @media (max-width: $tablet)
+      width: 377px
+
+    @media (max-width: $mobile)
+      width: 277px
+
+    @media (max-width: 370px)
+      width: 230px
+
+    @media (max-width: $xmobile)
+      width: 70%
+      min-width: 130px
+
+  &__phone
+    width: 274px
+    position: absolute
+    bottom: -100px
+    left: 55%
+
+    @media (max-width: $tablet)
+      width: 204px
+      bottom: -80px
+
+    @media (max-width: $mobile)
+      width: 150px
+      bottom: -60px
+
+    @media (max-width: 370px)
+      width: 140px
+      bottom: -50px
+
+    @media (max-width: $xmobile)
+      width: 40%
+      min-width: 80px

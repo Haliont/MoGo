@@ -1,0 +1,31 @@
+mixin navigation()
+  nav.navigation&attributes(attributes)
+    button.n-burger
+      .n-burger__line.n-burger__line_top
+      .n-burger__line.n-burger__line_middle
+      .n-burger__line.n-burger__line_bottom
+    ul.navigation__list
+      li.navigation__item
+        a.navigation__link(href="#about") About
+      li.navigation__item
+        a.navigation__link(href="#service") Service
+      li.navigation__item
+        a.navigation__link(href="#work") Work
+      li.navigation__item
+        a.navigation__link(href="#blog") Blog
+      li.navigation__item
+        a.navigation__link(href="#contact") Contact
+    .navigation__buttons
+      button.navigation__basket
+        +svg('basket')
+      button.navigation__search
+        +svg('loup')
+
+
+
+
+
+
+
+
+

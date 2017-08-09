@@ -1,0 +1,51 @@
+.reviews
+  +sect()
+  +img-bg('reviews_bg.jpg')
+  background-position: center
+  position: relative
+
+  &__list,
+  .sect-head
+    position: relative
+    z-index: 2
+
+  &__overlay
+    width: 100%
+    height: 100%
+    background: white
+    opacity: .8
+
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+
+  &__list
+    +wrapper()
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    @media (max-width: 850px)
+      flex-direction: column
+      align-items: center
+
+  &__opion
+    width: 50%
+    max-width: 514px
+
+    &:nth-child(n + 3)
+      margin-top: 69px
+
+    @media (max-width: 850px)
+      width: 100%
+
+      &:nth-child(n + 3)
+        margin-top: 0
+
+      &:not(:last-child)
+        margin-bottom: 69px
+
+    @media (max-width: $mobile)
+      .opion__author-pic
+        min-width: 75px

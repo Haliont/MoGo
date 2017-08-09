@@ -1,0 +1,60 @@
+.facts
+  background-color: $thirdDecorColor
+
+  &__inner
+    +wrapper()
+    display: flex
+    flex-wrap: wrap
+
+  &__fact
+    padding: 90px 20px
+    width: 20%
+    text-align: center
+    border-right: 1px solid rgba($white, .3)
+
+    &:first-child
+      border-left: 1px solid rgba($white, .31)
+
+    @media (max-width: $tablet) and (min-width: $mobile + 1)
+      width: 33.3333%
+
+      &:nth-child(5),
+      &:nth-child(4)
+        width: 50%
+        border-top: 1px solid rgba($white, .31)
+
+      &:nth-child(4)
+        border-left: 1px solid rgba($white, .31)
+
+    @media (max-width: $mobile)
+      width: 50%
+
+      &:not(:last-child)
+        border-bottom: 1px solid rgba($white, .31)
+
+
+      &:nth-child(3)
+        border-left: 1px solid rgba($white, .31)
+
+      &:nth-child(5)
+        width: 100%
+        border-left: 1px solid rgba($white, .31)
+
+  &__num,
+  &__title
+    display: block
+
+  &__num
+    color: $white
+    font-family: $fontTitle
+    font-size: 4.8rem
+    font-weight: 700
+    text-transform: uppercase
+
+  &__title
+    color: $white
+    font-family: $fontTitle
+    font-size: 0.933rem
+    font-weight: 400
+    text-transform: uppercase
+    margin-top: 30px

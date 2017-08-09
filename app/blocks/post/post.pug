@@ -1,0 +1,18 @@
+mixin post(img, day, month, title, text, view, comments)
+  article.post&attributes(attributes)
+    header.post__header
+      img(src="img/" + img, alt="ЫыЫ").post__img
+      time.post__time
+        span.post__time_day= day
+        span.post__time_month= month
+    .post__body
+      h3.post__title
+        a(href="#" + title).post__link= title
+      p.post__text= text
+    footer.post__footer
+      .post__stat._view
+        +svg('view', 'post__stat-icon')
+        span.post__stat-counter= view
+      .post__stat._comments
+        +svg('speech-bubble', 'post__stat-icon')
+        span.post__stat-counter= comments

@@ -1,0 +1,30 @@
+.map
+  padding: 57px 0 80px
+  +img-bg('open_map_bg.jpg')
+  background-position: center
+  text-align: center
+
+  &__icon
+    fill: $firstDecorColor
+    width: 20px
+    height: 26px
+
+  &__title
+    color: $firstDecorColor
+    font-family: $fontTitle
+    font-size: 1.6rem
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 18px
+
+    position: relative
+
+    &::after
+      content: ''
+      width: 60px
+      height: 3px
+      background: $firstDecorColor
+      position: absolute
+      bottom: -21px
+      left: 50%
+      transform: translateX(-50%)

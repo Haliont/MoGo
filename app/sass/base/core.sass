@@ -1,0 +1,29 @@
+html, body
+  height: 100%
+  font-size: $fontSize
+
+  @media screen and (max-width: $tablet)
+    font-size: $fontSize - 2
+
+  @media screen and (max-width: $mobile)
+    font-size: $fontSize - 4
+
+  *,
+  *::before,
+  *::after
+    box-sizing: border-box
+
+body
+  line-height: $lineHeight
+  font-family: $fontFamily
+  font-weight: 400
+  color: $textColor
+
+  overflow-x: hidden
+
+a
+  text-decoration: none
+  transition: all .2s ease
+
+  &:hover
+    transition: none

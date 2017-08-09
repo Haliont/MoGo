@@ -1,0 +1,8 @@
+mixin opion(path, author, job, speach)
+  div.opion&attributes(attributes)
+    .opion__img-box
+      img(src="img/" + path, alt="Автор").opion__author-pic
+    .opion__body
+      h3.opion__author.people-name= author
+      span.opion__author-job.people-job= job
+      blockquote.opion__text= speach

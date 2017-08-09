@@ -1,0 +1,26 @@
+.button
+  display: flex
+  padding: 15px 32px
+  color: $white
+  font-family: $fontTitle
+  font-size: 0.933rem
+  font-weight: 700
+  text-transform: uppercase
+  background: transparent
+  border: 3px solid $white
+
+  transition: all .25s
+
+  &:hover
+    color: $secondDecorColor
+    text-shadow: 1px 1px 1px black
+    background: $white
+
+  &_color
+
+    &-green
+      background: $thirdDecorColor
+      border: 0
+
+      &:hover
+        background: darken($thirdDecorColor, 10)

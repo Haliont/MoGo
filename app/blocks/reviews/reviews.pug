@@ -1,0 +1,13 @@
+mixin reviews()
+  section.reviews&attributes(attributes)
+    .reviews__overlay
+    +sect-head('Happy Clients','What people say')
+    .reviews__list
+
+      +opion('opion_1.png', 'Matthew Dix', 'Graphic Design', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.')(class="reviews__opion")
+
+      +opion('opion_2.png', 'Nick Karvounis', 'Graphic Design', 'Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam')(class="reviews__opion")
+
+      +opion('opion_3.png', 'Jaelynn Castillo', 'Graphic Design', 'Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam')(class="reviews__opion")
+
+      +opion('opion_4.png', 'Mike Petrucci', 'Graphic Design', 'Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.')(class="reviews__opion")
